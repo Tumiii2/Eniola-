@@ -1,0 +1,33 @@
+input{
+    display: none;
+}
+
+label{
+    display: block;
+    padding: 8px 22px;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    background:plum;
+    border-radius: 3px;
+    color:white;
+    transition: ease 5s;
+}
+
+label:hover{
+    background-color:orchid;
+}
+
+.Content{
+    background:whitesmoke;
+    border: 1px solid purple;
+    margin: 0 0 1px 0;
+    border-radius: 3px;
+}
+
+input+label+.Content{
+    display: none;
+}
+
+input:checked+label+.Content{
+    display: block;
+}
